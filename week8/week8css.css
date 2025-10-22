@@ -1,0 +1,30 @@
+
+body{background-color: pink;}
+img {max-width: 100%;height: auto;}	
+h1	{font-size: 3em;}
+h2	{text-align:center;}
+p	{color:green}
+p	{font-size: 2.5em;}
+p	{
+		border-top-style: dotted;
+		border-right-style: solid;
+		border-bottom-style: dotted;
+		border-left-style: solid;
+		background-color: #dddddd;
+		padding: 10px;   
+		border-radius: 25px;
+		}
+table { 
+	border-color: blue; 
+	border-style: dashed; 
+	} 
+td { 
+	border-color: #FFBD32; 
+	border-style: solid; 
+	} 
+
+a:link {color: #ffffff}
+a:visited {color: #581289;}
+a:hover {color: #173892;}
+
+#h1centeredtext{text-align:center;color:red}

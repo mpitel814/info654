@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- necessary! -->
+	<!-- <link rel="stylesheet" type="text/css" href="week8css.css"> -->
+	<title>Sample Webpage</title>	
+	<style>
+		 #header,#footer {width: 100%; text-align: center;border-radius:5px; }
+        #header {background:cyan; color:black; border-bottom:5px solid azure;}
+        #footer {clear:left ; background:pink;color:black;border-bottom:5px solid pink;}
+        
+        #leftnav,#centerbody {margin:10px; float:left;}
+        #leftnav {padding-left:10px; border:2px outset green; width:20%; height:180px;}
+        #centerbody {border:2px outset blue; text-align:center; width:70%;height:180px;}
+        
+        .centerred {text-align:center; color:red}
+    </style>
+	
+	<!-- THE CONTENT -->
+<body>
+<div id="header">
+	<h1> Welcome to my page! This is the header</h1>
+	<h3>Read more about me below</h3>
+</div>
+<div id="leftnav">
+	Left navbar
+	<ul>
+		<li> <a href=”https://www.pratt.edu/about/visit-pratt/”>Visit Pratt</a></li>
+		<li> <a href=”https://www.moma.org/visit/”>Visit Moma</a></li>
+		<li> <a href="https://www.google.com/"> Search Google</a></li>
+		<li> <a href="https://www.apple.com/"> Shop Apple</a></li>
+	</ul>
+</div>
+<div id="centerbody">
+	<h2>Heading Level 2</h2>
+	<h2 class="centerred">Another Heading</h2>
+	<p> Hello world. This is an example of a well structured HTML page</p>
+	<a class="centerred" href="http://www.pratt.edu">I Love Pratt</a>"
+</div>
+
+<div id="footer">
+	<h1> Thanks for visiting my page. This is the footer.</h1>
+	<h2>Come back soon.</h2>
+</div>
+	
+
+</body> 
+</html>
+
+
+<!-- UNUSED STYLE CODE! 
+
+	<style>
+
+		.container {
+			position:relative; 
+			width: 300px; 
+			height: 200px; 
+			background-color: aquamarine;
+			padding: 10px; 
+
+		}
+		.absolute {
+			position: absolute;
+			top: 60px; 
+			right: 10px;
+			background-color: red;
+			color:beige; 
+			padding: 10px;
+		}
+		.fixed{
+			position: fixed; 
+			bottom: 10px; 
+			right: 10px; 
+			background-color: orange; 
+			padding: 10px;
+		}
+		.left { 
+			float: left; 
+			width: 120px; 
+			background-color: #CB87AF; 
+			border-radius: 5px; 
+		} 
+		.main { 
+			padding-left: 130px; 
+			margin:5px; 
+		}
+
+
+	</style>
+	-->	
+<!---	<style> 
+		body{background-color: pink;}s
+		img {max-width: 100%;height: auto;}	
+		h1	{font-size: 3em;}
+		h2	{text-align:center;}
+		p	{color:green}
+		p	{font-size: 2.5em;}
+		p	{
+			border-top-style: dotted;
+    		border-right-style: solid;
+   			border-bottom-style: dotted;
+			border-left-style: solid;
+    		background-color: #dddddd;
+			padding: 10px;   
+    		border-radius: 25px;
+		}
+		table { 
+			border-color: blue; 
+			border-style: dashed; 
+		} 
+		td { 
+			border-color: #FFBD32; 
+			border-style: solid; 
+		} 
+
+		a:link {color: #ffffff}
+    	a:visited {color: #581289;}
+   		a:hover {color: #173892;}
+
+		#h1centeredtext{text-align:center;color:red}
+	</style>
+-->
+
+	<!-- 
+	<h1>Fixed Position Example</h1>
+	<div class="fixed">I am fixed and will always stay in the bottom corner.</div>
+	<h1>Absolute Position Example</h1>
+	<div class="container">
+		I am a relative container. 
+		<div class="absolute">I am absolute inside this container.</div>
+	</div>
+	
+	<div class="left"> 
+		<h3>My Left Nav</h3> 
+	</div> 
+
+	<div class="main"> 
+		<h3>About me</h3> 
+		<p>Lorem ipsum dolor sit amet, dicant posidonium id cum, nibh nonumy definitiones ei ius. His volumus philosophia eu, suas dicat suscipit vim eu. </p> 
+	</div>
+
+
+
+	
+	<h1 id="h1centeredtext"> Heading Level 1</h1>
+	<h1>Another Heading Level 1</h1>
+	<table>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+	</table>
+
+	<h2> This is a dog:</h2>
+	<img src="images/dogpic2.jpeg" alt= "dog stealing food from a dinner plate">
+	<p> An ugly box</p>
+	<a href="http://www.pratt.edu">Visit Pratt</a>
+	-->
+
+<!-- .container {
+			position:relative; 
+			width: 22%; 
+			height: 18%; 
+			padding-top: 15px; 
+			padding-bottom: 20px;
+			padding-left: 15px;
+			border-left: 2px solid green;
+			border-top: 2px solid green;
+			border-right: 2px solid black;
+			border-bottom: 2px solid black;
+
+		}
+		.container2 {
+			float:right;
+			width:78%;
+			height: 18%; 
+			padding-top: 15px; 
+			padding-bottom: 20px;
+			padding-left: 15px;
+			border-left: 2px solid green;
+			border-top: 2px solid green;
+			border-right: 2px solid black;
+			border-bottom: 2px solid black;
+
+		}
+		.floating-box {
+  			float: left;
+ 			width: 150px;
+ 			height: 75px;
+  			margin: 10px;
+  			border: 3px solid #73AD21;  
+		}
+		
+	</style>
+
+</head> 
+-->
