@@ -1,0 +1,161 @@
+
+body{
+	background-color: pink;
+	font-family:'Courier New', Courier, monospace;
+}
+#headercenter{
+	text-align:center;
+	width: 100%;
+	height: 100%;
+	border-radius: 30px;
+	background-image:url("headerpicture.jpg");
+	border-bottom: 30px;
+}
+#bioh3{
+	text-align:center;
+}
+ul li {
+  margin-bottom: 10px; 
+}
+
+p{
+	margin-bottom: 10px; 
+}
+
+#image1{
+	width:15%;
+  	position:static;
+	float: right;
+	border:black solid;
+	margin-right: 50px;
+	padding: 10px;
+}
+
+#image2{
+	width:15%;
+	display: block;
+	margin: 0 auto;
+	border:2px solid black;
+	padding: 10px;
+}
+.imagelink{
+	display: inline-block;
+  	text-align: center;  
+
+}
+
+figure{
+    display: inline-block;
+	text-align: center;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#bottom-images{
+	display: flex; 
+	justify-content: center;
+	gap: 40px;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	text-align:center;
+	flex-wrap: wrap;
+}
+#bottom-images figure{
+	margin: 0;
+	display:inline-block;
+}
+#bottom-images img{
+	width: 15%;
+	border: 2px solid black;
+	padding: 10px;
+	display: block;
+	margin: 0 auto;
+	cursor: pointer;
+}
+#bottom-images figcaption{
+	font-style: italic;
+	margin-top: 8px;
+}
+#bottom-images figcaption a{
+	color: black;
+	font-style:italic;
+}
+#bottom-images figcaption a:hover{
+	text-decoration: underline;
+}
+.footer{
+	text-align:center;
+	bottom:0;	
+  	margin: 0 auto;
+	font-weight: 1000;
+	background-image:url("headerpicture.jpg");
+	width: 100%;
+
+}
+
+.linkalign{
+     text-align: center;
+	 display: block;
+}
+
+.table{
+    display: table;
+	position:center;
+	margin-right: auto;  
+	margin-left: auto;
+    }
+.title{
+    display: table-caption;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    }
+.heading{
+	display: table-row;
+    font-weight: bold;
+    text-align: center;
+    }
+.row{
+    display: table-row;
+    }
+
+.cell{
+	display: table-cell;
+    border: solid;
+    border-width: thin;
+    padding-left: 5px;
+    padding-right: 5px;
+    }
+
+/*
+.table {
+  border-color:red;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  display: table;
+}
+.cell {
+  padding: 12px 14px;
+  border-bottom: 1px solid #eee;
+	display: table-cell;
+  
+}
+.row {
+  display: table-row;
+}
+.rowheader{
+	font-weight: 500;
+}
+	
+*/
