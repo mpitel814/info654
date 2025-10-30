@@ -61,8 +61,9 @@ footer {
   display: table;
 	margin-right: auto;  
 	margin-left: auto;
-	width:100%;
+	width: 85%;
 	flex: 1; 
+  padding: 20px;
 }
 
 .title{
