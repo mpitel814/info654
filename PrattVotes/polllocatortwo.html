@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- necessary! -->
+	<link rel="stylesheet" type="text/css" href="PrattVotesCSS.css"> 
+<html>
+  <script>
+    async function onClickSubmit(){
+        var zipcode = document.getElementById("zipcode").value;
+        var resultsDiv = document.getElementById("results");
+
+        if(zipcode.length != 5||isNaN(zipcode)){
+           resultsDiv.innerHTML = zipcode + " is not a valid New York City zipcode.";
+            return;
+        }
+     
+        var url = `https://data.cityofnewyork.us/api/v3/views/mifw-tguq/query.json?pageNumber=1&pageSize=10&app_token=nEaDvAKzMfwRCF5MRJcY3MUpC&query=SELECT%20*%20WHERE%20%60zip_code%60%3D%27${zipcode}%27`
+        var response = await fetch(url);
+        var jsonData = await response.json();
+    
+
+        resultsDiv.innerHTML = "";
+        if(jsonData.length == 0){
+            resultsDiv.innerHTML += zipcode + " is not a valid New York City zipcode."    
+        }
+        else 
+        for(var i = 0; i < jsonData.length; i++){
+            resultsDiv.innerHTML += jsonData[i].site_name + "<br>";
+            resultsDiv.innerHTML += jsonData[i].street_number + " " + jsonData[i].street_name + "<br>";
+            resultsDiv.innerHTML += jsonData[i].city + ", " +jsonData[i].zip_code + "<br><br>";
+        }
+    }
+    </script>
+
+<body>
+<header>
+    <nav>
+      <div class="logo">Pratt Votes</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">Early Voting</a></li>
+        <li><a href="artportfolio.html">History</a></li>
+        <li><a href="favoritebooks.html">How to Register</a></li>
+        <li><a href="resume.html">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+<h1>Poll Site Locator</h1>
+<h3>Please Enter a Valid NYC Zipcode</h3>
+<input type="text" id="zipcode" name="zipcode" required size="8">
+<button type="button" id="submit" onclick="onClickSubmit()">submit</button>
+<div id="results"></div>
+
+</body>
+</html>
+
