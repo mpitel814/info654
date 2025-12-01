@@ -44,3 +44,15 @@ nav {
 .nav-links a:hover {
   color: #00bcd4;
 }
+
+/* Poll Locator Styling */
+.poll_locator{
+  align-items: center;
+  text-align: center;
+}
+
+/* How to Register Styling*/ 
+.registration{
+  align-items: center;
+  text-align: center;
+}
