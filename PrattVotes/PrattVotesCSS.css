@@ -43,7 +43,7 @@ nav {
 }
 
 .nav-links a:hover {
-  color: #00bcd4;
+  color: #ba2037;
 }
 
 /* Poll Locator Styling */
@@ -117,7 +117,7 @@ nav {
 }
 
 .reg_button:hover {
-  background-color: #365bb3;
+  background-color: #ba2037;
 }
 
 footer {
@@ -128,3 +128,15 @@ footer {
   font-size: small;
 }
 
+.mail_instructions{
+  align-items: center;
+  text-align: center;
+}
+.mailing_table{
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 25px;
+  padding: 15px;
+  border-width: 1px;
+  border-collapse:seperate;
+}
