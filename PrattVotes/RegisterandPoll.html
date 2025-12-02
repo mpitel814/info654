@@ -11,11 +11,20 @@
         var zipcode = document.getElementById("zipcode").value;
         var resultsDiv = document.getElementById("results");
 
+        if(zipcode === ""){
+          resultsDiv.innerHTML = "Please enter a valid New York City zipcode.";
+          return;
+        }
+
+        if(zipcode.trim() === ""){
+          resultsDiv.innerHTML = "Please enter a valid New York City zipcode.";
+          return;
+        }
         if(zipcode.length != 5||isNaN(zipcode)){
            resultsDiv.innerHTML = zipcode + " is not a valid New York City zipcode.";
             return;
         }
-     
+
         var url = `https://data.cityofnewyork.us/api/v3/views/mifw-tguq/query.json?pageNumber=1&pageSize=10&app_token=nEaDvAKzMfwRCF5MRJcY3MUpC&query=SELECT%20*%20WHERE%20%60zip_code%60%3D%27${zipcode}%27`
         var response = await fetch(url);
         var jsonData = await response.json();
@@ -23,7 +32,7 @@
 
         resultsDiv.innerHTML = "";
         if(jsonData.length == 0){
-            resultsDiv.innerHTML += zipcode + " is not a valid New York City zipcode. Please try again!"    
+            resultsDiv.innerHTML += zipcode + " is not a valid New York City zipcode. Please try again!" 
         }
         else 
         for(var i = 0; i < jsonData.length; i++){
@@ -67,6 +76,7 @@
 <div class ="poll_locator"> 
   <h1>Poll Site Locator</h1>
   <h3>Please Enter a Valid NYC Zipcode</h3>
+  <br>
   <input type="text" id="zipcode" name="zipcode" placeholder="e.g., 10011" required size="10">
   <button type="button" id="submit" onclick="onClickSubmit()">submit</button>
   <br><br>
