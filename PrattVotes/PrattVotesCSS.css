@@ -13,7 +13,7 @@ header {
 }
 
 .header_image{
-  width: 175px;
+  width: 17%;
   height: auto;
   padding:0;
 }
@@ -22,10 +22,15 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1000px;
+  max-width: 100%;
   margin: 0 auto;
 }
-
+@media (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 /*.logo {
   font-size: xx-large;
   font-weight: bold;
@@ -70,13 +75,13 @@ nav {
   margin-right: auto;
   padding-top:0;
   padding-bottom: 0;
-  border-spacing: 15px;
-  border-width: 1px;
+  border-spacing: .5rem;
+  border-width: .1rem;
   border-collapse:seperate;
 }
 
 .table_image{
-  width: 175px;
+  width: 40%;
   height: auto;
 }
 
@@ -84,7 +89,7 @@ nav {
 
 .reg_button {
   display: inline-block;
-  padding: 12px 22px;
+  padding: 0.75rem 1.25rem;
   background-color: #4875d7;
   color: white;
   text-decoration: none;
@@ -103,7 +108,7 @@ nav {
   background-color:#ba2037;
   color: white;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 10%;
   font-weight: 600;
   transition: background-color 0.2s ease;
 }
