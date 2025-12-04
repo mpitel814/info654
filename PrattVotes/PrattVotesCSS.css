@@ -1,16 +1,48 @@
 /*Body*/
-html, body {
+
+/*html, body {
   height: 100%;        
   margin: 0;
   flex-direction: column;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+  */
 /* Nav Bar*/
+/*
 header {
   background-color: #4875d7;
   color: white;
   padding: 1rem 2rem;
-}
+} */
+
+   body {
+            font-family: Georgia, serif;
+            margin: 0;
+            padding: 0;
+            background: #fafafa;
+            color: #222;
+            line-height: 1.6;
+        }
+
+  header {
+    background: #002147;
+    color: white;
+    padding: 20px;
+    text-align: center;
+ }
+
+   nav {
+            background: #e8e8e8;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #002147;
+            font-weight: bold;
+        }
 
 .header_image{
   width: 17%;
@@ -18,6 +50,7 @@ header {
   padding:0;
 }
 
+/*
 nav {
   display: flex;
   justify-content: space-between;
@@ -37,7 +70,7 @@ nav {
   font-style: oblique;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-*/
+
 
 .nav-links {
   list-style: none;
@@ -58,6 +91,8 @@ nav {
   color: #ba2037;
 }
 
+*/
+
 /* Poll Locator Styling */
 .poll_locator{
   align-items: center;
@@ -77,7 +112,6 @@ nav {
   padding-bottom: 0;
   border-spacing: .5rem;
   border-width: .1rem;
-  border-collapse:seperate;
 }
 
 .table_image{
@@ -90,7 +124,7 @@ nav {
 .reg_button {
   display: inline-block;
   padding: 0.75rem 1.25rem;
-  background-color: #4875d7;
+  background-color: #3b558d;
   color: white;
   text-decoration: none;
   border-radius: 8px;
@@ -99,30 +133,31 @@ nav {
 }
 
 .reg_button:hover {
-  background-color: #ba2037;
+  background-color: #7d2734;
 }
 
 .check_button {
   display: inline-block;
   padding: 12px 22px;
-  background-color:#ba2037;
+  background-color:#7d2734;
   color: white;
   text-decoration: none;
-  border-radius: 10%;
+  border-radius: 8px;
   font-weight: 600;
   transition: background-color 0.2s ease;
 }
 
 .check_button:hover {
-  background-color: #4875d7;
+  background-color: #3b558d;
 }
 
 footer {
-  background-color: #4875d7;
+  background-color: #3b558d;
   color: white;
   padding: 1%;
   text-align: center;
   font-size: small;
+  max-width: 100%;
 }
 
 .mail_instructions{
@@ -135,7 +170,6 @@ footer {
   border-spacing: 25px;
   padding: 15px;
   border-width: 1px;
-  border-collapse:seperate;
 }
 #bolded{
   font-weight: bold;
@@ -143,3 +177,29 @@ footer {
 #italic{
   font-style:italic
 }
+.box {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            margin-bottom: 25px;
+        }
+
+        /* Quiz styling */
+        .quiz-question {
+            margin-bottom: 20px;
+        }
+
+        .quiz-result {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* Hotline box */
+        #hotlineBox {
+            background: #f0f7ff;
+            border: 1px solid #bcd4ff;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
