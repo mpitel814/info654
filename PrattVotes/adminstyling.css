@@ -1,0 +1,49 @@
+ h1{text-align:center;}
+        h2{text-align:center;}
+       p{
+        text-align:left;
+    padding-left: 25%;
+padding-right: 25%;}
+       .center {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  padding: 10px;
+}
+.sourcetext{
+  text-align:left;
+  font-size: smaller ;
+  color:#4875d7;
+  padding-left: 25%;
+}
+.collapsible {
+  background-color: #002148;
+  display: grid;
+  color: #e8e8e8;
+  cursor: pointer;
+  padding: 18px;
+  margin-bottom: 5px;
+  width: 40%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+.active, .collapsible:hover {
+  color:#002148;
+  background-color: #e8e8e8;
+}
+.content {
+  padding: 10px;
+  display: none;
+  overflow: hidden;
+  background-color: #e8e8e8;
+  border-radius: 2px;
+  border-color: #4470b7;
+}
+  div.relative {
+  position: relative;
+  left: 10px;
+  right: 5px;
+}
