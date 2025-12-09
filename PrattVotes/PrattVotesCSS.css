@@ -358,6 +358,11 @@ footer {
     margin: 0 0 12px 0;
 }
 
+.kyr-page .content-card {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
 /* Quiz area */
 .kyr-page #quiz {
     max-width: 600px;
