@@ -33,6 +33,7 @@
 }
 .collapsible {
      background-color: #002148;
+     font-family: Georgia;
      display: grid;
      color: #e8e8e8;
      cursor: pointer;
