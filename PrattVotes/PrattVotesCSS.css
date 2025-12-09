@@ -323,3 +323,56 @@ footer {
   max-width: 50%;
   height: auto;
 }
+/* ---------------------------------------------- */
+/* KNOW YOUR RIGHTS PAGE — SCOPED CARD STYLING    */
+/* Only affects elements inside .kyr-page         */
+/* ---------------------------------------------- */
+
+.kyr-page .card {
+    background: #ffffff;
+    border: 1px solid #d3d3d3;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+.kyr-page .card h2,
+.kyr-page .card h3 {
+    margin-top: 0;
+    color: #1b2a49;
+    font-weight: 700;
+}
+
+.kyr-page .card p {
+    margin: 0 0 12px 0;
+}
+
+/* Quiz area */
+.kyr-page #quiz {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.kyr-page #submitQuiz {
+    display: block;
+    margin: 20px auto 10px auto;
+    padding: 12px 24px;
+    background-color: #1b2a49;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.kyr-page #submitQuiz:hover {
+    background-color: #263c6e;
+}
+
+.kyr-page #quizResult {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+}
