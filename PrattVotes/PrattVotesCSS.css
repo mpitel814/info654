@@ -297,3 +297,29 @@ footer {
 	margin: 4px 2px; 
 	cursor: pointer;
 }
+
+.homepagebutton {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  background-color: #3b558d;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.homepagebutton:hover {
+  background-color: #7d2734;
+}
+
+.indexImage {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;  /* optional */
+}
+
+.indexImage img {
+  max-width: 50%;
+  height: auto;
+}
