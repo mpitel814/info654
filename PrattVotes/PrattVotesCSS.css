@@ -285,3 +285,15 @@ footer {
 .faq-answer ul {
     padding-left: 20px;
 }
+.homepagebutton { 
+	background-color: #002148; 
+	border-radius: 5px;
+    font-family: Georgia;
+	color: #e7ecef; 
+	padding: 18px; 
+	text-align: center; 
+	display: inline-block; 
+	font-size: 13px;
+	margin: 4px 2px; 
+	cursor: pointer;
+}
