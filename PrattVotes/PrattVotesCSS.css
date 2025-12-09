@@ -285,7 +285,7 @@ footer {
 .faq-answer ul {
     padding-left: 20px;
 }
-.homepagebutton { 
+.homepagebutton a { 
 	background-color: #002148; 
 	border-radius: 5px;
     font-family: Georgia;
