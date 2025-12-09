@@ -1,164 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="kyrCSS.css"> 
-    <title>Your Voting Rights</title>
-
-    <!-- Simple internal CSS so the page is portable and easy to understand -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Know Your Voting Rights</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+    <header>
+        <h1>Know Your Voting Rights</h1>
+        <p class="subtitle"><b>A simple guide to voting in NYC</b></p>
 
-<header>
-    <h1 id="headerColor">Pratt Votes</h1>
-</header>
+          <nav>
+        <a href="index.html">Home</a>
+        <a href="RegisterandPoll.html">How to Register & Poll Site Locator</a>
+        <a href="EarlyVoting.html">Early Voting & Affidavits</a>
+        <a href="IncomingAdmin.html">Incoming Administration</a>
+        <a href="KnowYourRights.html">Know Your Rights</a>
+        <a href="FAQ.html">FAQ</a>
+    </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>You are eligible to vote if you are:</h2>
+            <ul>
+                <li><strong>a <a href="https://www.vote.nyc/page/register-vote" target="_blank">registered voter</a></strong></li>
+                <li><strong>at least 18 years of age</strong></li>
+                <li><strong>a US citizen</strong></li>
+                <li><strong>in line at <a href="https://findmypollsite.vote.nyc" target="_blank">your poll site</a> before it is scheduled to close</strong></li>
+                <li><strong>on probation or parole</strong></li>
+            </ul>
+        </section>
+        <section class="card">
+            <h2>At your poll site, you have the right to:</h2>
+            <ul>
+                <li><strong>vote free from discrimination</strong> <a href="https://en.wikipedia.org/wiki/Voting_Rights_Act_of_1965" target="_blank">(Voting Rights Act)</a></li>
+                <li><strong>assistance</strong> for language access or disability-related needs</li>
+                <li><strong>a provisional ballot</strong> if your name is missing from the voter list</li>
+                <li><strong>vote without intimidation or harassment</strong></li>
+                <li><strong>report violations</strong> and request help</li>
+                <li><strong>not show ID</strong> if you are not a first-time voter</li>
+            </ul>
+        </section>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="RegisterandPoll.html">How to Register & Poll Locator</a>
-    <a href="IncomingAdmin.html"> Incoming Administration</a>
-    <a href="KnowYourRights.html" class="active">Know Your Rights</a>
-    <a href="FAQ.html"> FAQ</a>
-</nav>
-<br>
-<h1 id="centerText"> Know Your Rights </h1>
-<div class="container">
+        <section class="card">
+            <h2>Have questions or concerns? Call the Election Protection Hotline:</h2>
+            <p id="hotline">Loading hotline number…</p>
+        </section>
 
-    <div class="box">
-        <h2>Know Your Rights at the Polls</h2>
-        <p>
-            Every voter has certain rights protected under federal and state law. Understanding these
-            protections ensures that you can cast your ballot confidently and without interference.
-            Below is a plain-language overview of the rights that matter most for New Yorkers.
-        </p>
-    </div>
+        <section class="card">
+            <h2>How well do you know your rights?</h2>
+            <div id="quiz"></div>
+            <button id="submitQuiz">Submit Answers</button>
+            <p id="quizResult"></p>
+        </section>
+    </main>
 
-    <div class="box">
-        <h2>1. Freedom From Discrimination</h2>
-        <p>
-            The Voting Rights Act protects you from discrimination based on race, color, or membership
-            in a protected language minority group. No one at a polling place may treat you differently
-            because of your identity or background.
-        </p>
-    </div>
+    <footer>
+        <p>Sources: <a href="https://www.aclu.org/issues/voting-rights" target="_blank">ACLU</a>, <a href="https://www.eac.gov/voters/voting-101-election-information-new-voters" target="_blank">U.S. Election Assistance Commission</a>, <a href="https://www.vote.nyc" target="_blank">NYC Board of Elections</a></p>
+    </footer>
 
-    <div class="box">
-        <h2>2. Right to Assistance</h2>
-        <p>You may bring someone with you to help you vote, as long as it is not your employer or union representative.</p>
-        <p>New York also provides:</p>
-        <ul>
-            <li>Language assistance at select sites</li>
-            <li>Ballot marking devices for accessibility</li>
-            <li>ADA-compliant entrances at polling places</li>
-        </ul>
-    </div>
-
-    <div class="box">
-        <h2>3. Right to a Provisional (Affidavit) Ballot</h2>
-        <p>
-            If you're told your name is not in the pollbook, you are still entitled to vote using an affidavit ballot.
-            Do <strong>not</strong> leave without voting.
-        </p>
-    </div>
-
-    <div class="box">
-        <h2>4. Protection from Intimidation</h2>
-        <p>
-            Intimidation is illegal. This includes aggressive questioning, blocking the entrance,
-            threats, misinformation, or attempts to influence your vote.
-        </p>
-        <p>If you experience this, report it immediately using the hotline widget below.</p>
-    </div>
-
-    <!-- Hotline API Widget -->
-    <div class="box">
-        <h2>Election Protection Hotline (Automatically Retrieved)</h2>
-        <p>This national, nonpartisan hotline can help if you experience problems while voting.</p>
-        <div id="hotlineBox">Loading hotline...</div>
-    </div>
-
-    <!-- Quiz -->
-    <div class="box">
-        <h2>Quick Quiz: Know Your Rights</h2>
-
-        <div class="quiz-question">
-            <p>1. If your name is missing from the voter list, what should you do?</p>
-            <select id="q1">
-                <option value="">Select</option>
-                <option value="wrong">Leave and come back later</option>
-                <option value="correct">Request an affidavit (provisional) ballot</option>
-                <option value="wrong">You cannot vote</option>
-            </select>
-        </div>
-
-        <div class="quiz-question">
-            <p>2. Who is NOT allowed to assist you while voting?</p>
-            <select id="q2">
-                <option value="">Select</option>
-                <option value="wrong">A friend</option>
-                <option value="wrong">A family member</option>
-                <option value="correct">Your employer or union representative</option>
-            </select>
-        </div>
-
-        <div class="quiz-question">
-            <p>3. Is voter intimidation illegal?</p>
-            <select id="q3">
-                <option value="">Select</option>
-                <option value="correct">Yes</option>
-                <option value="wrong">No</option>
-            </select>
-        </div>
-
-        <div class="quiz-question">
-            <p>4. Can voters with disabilities request accommodations at the polling site?</p>
-            <select id="q4">
-                <option value="">Select</option>
-                <option value="correct">Yes</option>
-                <option value="wrong">No</option>
-            </select>
-        </div>
-
-        <button onclick="checkQuiz()">Submit</button>
-        <p id="quizResult" class="quiz-result"></p>
-    </div>
-
-</div>
-
-<footer> Info 654 - Fall 2025. Jennifer Helminski, MLIS program</footer>
-
-<!-- JavaScript -->
-<script>
-
-// --- Election Protection API (simple JSON fetch) ---
-fetch("https://raw.githubusercontent.com/kyledecker/election-hotline-api/master/election-hotlines.json")
-.then(response => response.json())
-.then(data => {
-    // national number available in the file
-    const hotline = data.national.english;
-    document.getElementById("hotlineBox").innerText = `Election Protection Hotline: ${hotline}`;
-})
-.catch(() => {
-    document.getElementById("hotlineBox").innerText = 
-        "Election Protection Hotline: 866-OUR-VOTE";
-});
-
-
-// --- Quiz Logic ---
-function checkQuiz() {
-    let score = 0;
-
-    if (document.getElementById("q1").value === "correct") score++;
-    if (document.getElementById("q2").value === "correct") score++;
-    if (document.getElementById("q3").value === "correct") score++;
-    if (document.getElementById("q4").value === "correct") score++;
-
-    document.getElementById("quizResult").innerText =
-        `You got ${score} out of 4 correct.`;
-}
-
-</script>
+    <script src="script.js"></script>
 </body>
 </html>
