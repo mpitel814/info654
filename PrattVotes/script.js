@@ -67,5 +67,5 @@ document.getElementById("submitQuiz").addEventListener("click", () => {
     });
 
     document.getElementById("quizResult").textContent =
-        `You scored ${score} out of ${quizQuestions.length}.`;
+        `You scored ${score} out of ${quizQuestions.length}!`;
 });
