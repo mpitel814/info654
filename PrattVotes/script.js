@@ -47,7 +47,8 @@ const quizContainer = document.getElementById("quiz");
 
 quizQuestions.forEach((item, index) => {
     const block = document.createElement("div");
-    block.innerHTML = `
+block.classList.add("quiz-question");
+block.innerHTML = `
         <p><strong>${item.q}</strong></p>
         ${item.answers.map((ans, i) =>
             `<label><input type="radio" name="q${index}" value="${i}" /> ${ans}</label><br>`
