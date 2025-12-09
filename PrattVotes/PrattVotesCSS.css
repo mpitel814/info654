@@ -358,10 +358,20 @@ footer {
     margin: 0 0 12px 0;
 }
 
+
+}
+
+.kyr-page .page-container {
+    max-width: 800px;
+    margin: 40px auto;
+    width: 100%;
+}
+
 .kyr-page .content-card {
     max-width: 800px;
     margin: 20px auto;
 }
+
 
 /* Quiz area */
 .kyr-page #quiz {
