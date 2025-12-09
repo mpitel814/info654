@@ -12,16 +12,16 @@
         var resultsDiv = document.getElementById("results");
 
         if(zipcode === ""){
-          resultsDiv.innerHTML = "Please enter a valid New York City zipcode.";
+          resultsDiv.textContent = "Please enter a valid New York City zipcode.";
           return;
         }
 
         if(zipcode.trim() === ""){
-          resultsDiv.innerHTML = "Please enter a valid New York City zipcode.";
+          resultsDiv.textContent = "Please enter a valid New York City zipcode.";
           return;
         }
         if(zipcode.length != 5||isNaN(zipcode)){
-           resultsDiv.innerHTML = zipcode + " is not a valid New York City zipcode.";
+           resultsDiv.textContent = zipcode + " is not a valid New York City zipcode.";
             return;
         }
 
@@ -42,7 +42,7 @@
         }
     }
     </script>
-
+</head>
 <body>
   <header>
     <h1> Pratt Votes </h1>
@@ -50,6 +50,7 @@
   <nav>
         <a href="index.html">Home</a>
         <a href="RegisterandPoll.html" class="active">How to Register & Poll Locator</a>
+        <a href="EarlyVoting.html">Early Voting &  Affidavits</a>
         <a href="IncomingAdmin.html">Incoming Administration</a>
         <a href="KnowYourRights.html">Know Your Rights</a>
         <a href="FAQ.html">FAQ</a>
@@ -98,7 +99,7 @@
 </div>
 <br><br>
 <footer>
-  <p> Info 654 - Fall 2025 - Maria Pitel</p>
+  <p> Info 654 - Fall 2025</p>
 </footer>
 </body>
 </html>
