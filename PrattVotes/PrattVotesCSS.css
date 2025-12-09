@@ -214,6 +214,15 @@ footer {
             margin-top: 10px;
         }
 
+/* Base card styling used only if a page activates it */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 25px;
+}
+
         /* FAQ Styling */
 
         /* LAYOUT */
