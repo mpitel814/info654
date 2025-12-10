@@ -151,14 +151,14 @@
 
     </section>
 
-
+<!--Credits to my friend Aarti for helping me with javascript -->
     <script>
         const questions = document.querySelectorAll(".faq-question");
 
         questions.forEach(q => {
             q.addEventListener("click", () => {
                 const answer = q.nextElementSibling;
-                const icon = q.querySelector(".icon");
+                const icon = q.querySelector(".icon");  
 
                 answer.classList.toggle("open");
 
